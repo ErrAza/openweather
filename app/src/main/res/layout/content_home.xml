@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/white"
+    android:background="@android:color/white"
+    tools:context="com.seanix.weatherapp.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewCityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        />
+
+    <ImageView
+        android:id="@+id/topBorderImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCityName"
+        app:srcCompat="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@id/topBorderImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:elevation="0dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="38dp"
+        android:onClick="OnFabCityClicked"
+        app:backgroundTint="#1e1d1d"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:srcCompat="@mipmap/ic_add_location_white_48dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="38dp"
+        android:onClick="OnFabLocationClicked"
+        app:backgroundTint="#1e1d1d"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:srcCompat="@mipmap/ic_my_location_white_48dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="OnFabMainClicked"
+        android:scaleType="center"
+        app:backgroundTint="#1e1d1d"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:srcCompat="@mipmap/ic_expand_more_white_48dp" />
+
+
+</RelativeLayout>

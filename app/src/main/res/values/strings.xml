@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OpenWeather</string>
+    <string name="celsius_symbol">°C</string>
+    <string name="mps">m/s</string>
+    <string name="percent">%</string>
+    <string name="title_activity_home">OpenWeather</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
